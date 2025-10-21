@@ -68,3 +68,17 @@ message.addEventListener("input", () => {
   message_error.textContent = "";
   message.classList.remove("error-border");
 });
+
+const home = document.querySelector(".home");
+const contact = document.querySelector(".contact");
+const about = document.querySelector(".about");
+
+
+let pathname = window.location.pathname;
+if (pathname.includes("index.html") || pathname === "/" || pathname.endsWith("/")) {
+  home?.classList.add("active-link");
+} else if (pathname.includes("about.html")) {
+  about?.classList.add("active-link");
+} else if (pathname.includes("contact.html")) {
+  contact?.classList.add("active-link");
+}
