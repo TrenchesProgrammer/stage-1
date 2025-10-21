@@ -12,6 +12,6 @@ let pathname = window.location.pathname;
 
 if (pathname.includes("index.html") || pathname === "/" || pathname.endsWith("/")) {
   home?.classList.add("active-link");
-} else if (pathname.includes("about.html")) {
+} else if (pathname.includes("about")) {
   about?.classList.add("active-link");
 } 
