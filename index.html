@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Profile</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/contact.html">Contact Us</a>
+      <a href="/about.html">About</a>
+    </nav>
+    <article data-testid="test-profile-card" class="main">
+      <div class="top-section">
+          <figure class="image-bg">
+            <img data-testid="test-user-avatar" class="profile-image" src="./avatar.png" alt="avatar" />
+          </figure>
+          <div class="info">
+            <h2 data-testid="test-user-name">Ajadi Ireanuoluwa</h2>
+            <h3>Frontend Developer</h3>
+            <p data-testid="test-user-bio">Passionate about building beautiful, responsive web experiences. Blockchain enthusiast and food lover.</p>
+            <div
+              style="display: flex; gap: 10px; justify-content: space-between"
+            >
+              <div>
+                <h4 >Current Time</h4>
+                <p data-testid="test-user-time" id="time"></p>
+              </div>
+              <div class="vl"></div>
+              <ul class="social-icons" data-testid="test-user-social-links">
+                <li data-testid="test-user-social-twitter"><a rel="noopener noreferrer" target="_blank" href="https://x.com/herit_ge"><img class="icon" src="./twitter-icon.svg" alt="twitter-icon" /></a></li>
+                <li data-testid="test-user-social-linkedin"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/ireanuoluwa-heritage-b250331b6/"><img class="icon" src="./inkedin-icon.svg" alt="linkedin-icon" /></a></li>
+                <li data-testid="test-user-social-github"><a rel="noopener noreferrer" target="_blank" href="https://github.com/trenchesprogrammer"><img class="icon" src="./github-icon.svg" alt="github-icon" /></a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <section class="hobbies">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Football</li>
+            <li>Reading</li>
+            <li>Coding</li>
+          </ul>
+        </section>
+        <section class="hobbies">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Noise</li>
+            <li>Bugs</li>
+            <li>Rain</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+    <script src="index.js"></script>
+  </body>
+</html>
